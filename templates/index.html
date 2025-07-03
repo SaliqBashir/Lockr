@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home 
+{% endblock %}
+
+{% block main %}
+<div class="left">
+    <h3>
+        Search
+    </h3>
+</div>
+<input type="text" id="searchInput" class="form-control mb-3" placeholder="website or username...">
+<div class="left">
+    <h3>Add new entry!</h3>
+</div>
+    <form method="post" action="/">
+        <div class="mb-3">
+        <input type="text" class="form-control" autocomplete="off" name="website" required placeholder="website">
+        <input type="text" class="form-control" autocomplete="off" name="username" required placeholder="username">
+        <input type="text" class="form-control"autocomplete="off" name="password" required placeholder="password">
+        <button class="btn btn-outline-success" type="submit" id="button-addon2">Add</button>
+        </div>
+    </form>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col" class="font">Website</th>
+            <th scope="col" class="font">Username</th>
+            <th scope="col" class="font">Password</th>
+            <th scope="col"></th>
+            <th scope="col"></th>   
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in vault %}
+        <tr class="vault-row">
+            <td>{{ row.service_name }}</td>
+            <td>{{ row.service_username }}</td>
+            <td>
+                <input type="password" value="{{ row.service_password }}" id="pw{{ row.id }}" readonly style="border: none; background: transparent;">
+                <button type="button" onclick="togglePassword('pw{{ row.id }}', this)">🙈</button>
+            </td>
+            <td>
+                <form method="post" action="/delete" onsubmit="return confirm('Are you sure you want to delete this entry?');" style="display:inline;">
+                    <input type="hidden" name="id" value="{{ row.id }}">
+                    <button type="submit">🗑️</button>
+                </form>
+            </td>
+            <td>
+                <form method="get" action="/edit">
+                    <input type="hidden" name="id" value="{{ row.id }}">
+                    <button type="submit">✏️</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

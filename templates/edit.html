@@ -1,0 +1,18 @@
+{% extends "layout.html"%}
+
+{% block title %}
+    Edit
+{% endblock %}
+
+{% block main %}
+<form action="/edit" method="post">
+    <div class="input-group mb-3">
+        <input type="text" name="website" value="{{vault.service_name}}" required autocomplete="off" placeholder="website" class="form-control">
+        <input type="text" name="username" value="{{vault.service_username}}" required autocomplete="off" placeholder="username" class="form-control">
+        <input type="text" name="password" value="{{vault.service_password}}" required autocomplete="off" placeholder="password" class="form-control">
+        <input type="hidden" value="{{id}}" name="id">
+        <button type="submit" class="btn btn-outline-primary">Submit</button>
+    </div>
+</form>
+<a href="/"><button class="btn btn-outline-danger" type="button">Cancel</button></a>
+{% endblock %}
