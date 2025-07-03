@@ -1,5 +1,4 @@
 # Lockr
-#### Video Demo:  <[URL HERE](https://www.youtube.com/watch?v=1wFkQxpwX3k)>
 #### Description:
 Lockr is a basic password manager where you can store all of your password anytime. It provides all the necessary functions that a passwords manager needs such as editing the passwords, searching for a password, deleting a password etc.
 
