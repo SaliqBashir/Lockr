@@ -2,13 +2,6 @@
 
 > A full-stack web application for secure password management with enterprise-grade encryption and intuitive user experience.
 
-## Screenshots
-![Login Page](https://github.com/user-attachments/assets/a587d338-7461-44f7-953e-24b484c8392f)
-![Main Dashboard](https://github.com/user-attachments/assets/b5a03ba1-c5e6-4317-846b-d6a5df958a5b)
-![Edit Page](https://github.com/user-attachments/assets/32129019-3b0b-45f6-8ea1-a8cd01b87f05)
-
-
-
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
 [![Flask](https://img.shields.io/badge/Flask-2.0+-green.svg)](https://flask.palletsprojects.com)
 [![SQLite](https://img.shields.io/badge/SQLite-3.0+-orange.svg)](https://sqlite.org)
@@ -130,6 +123,11 @@ lockr/
 - **Password Visibility**: Toggle between hidden and visible passwords
 - **Form Validation**: Client-side and server-side validation
 - **Error Handling**: User-friendly error messages and feedback
+
+## Screenshots
+![Login Page](https://github.com/user-attachments/assets/ebce9ca9-11d4-4ebf-9cc8-143d3d34d3fb)
+![Main Dashboard](https://github.com/user-attachments/assets/b5a03ba1-c5e6-4317-846b-d6a5df958a5b)
+![Edit Page](https://github.com/user-attachments/assets/32129019-3b0b-45f6-8ea1-a8cd01b87f05)
 
 ## 🚀 Future Enhancements
 
