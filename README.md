@@ -18,7 +18,7 @@ Lockr is a comprehensive password management solution built with modern web tech
 - **👤 User Authentication**: Secure registration and login system with session management
 - **🔍 Smart Search**: Real-time filtering and search across all password entries
 - **✏️ CRUD Operations**: Create, Read, Update, Delete password entries
-- **📱 Responsive Design**: Mobile-friendly interface with dark theme
+- **📱 Responsive Design**: Mobile-friendly interface with clean look
 - **🎯 User Experience**: Intuitive single-page dashboard with all essential features
 - **🔐 Password Visibility Toggle**: Secure password viewing with click-to-reveal
 - **🗑️ Bulk Operations**: Efficient management of multiple entries
@@ -36,7 +36,7 @@ Lockr is a comprehensive password management solution built with modern web tech
 - **Template Engine**: Jinja2 with template inheritance
 - **Styling**: Custom CSS with Bootstrap integration
 - **JavaScript**: Vanilla ES6+ for dynamic interactions
-- **UI/UX**: Dark theme with modern design principles
+- **UI/UX**: Modern design principles with clean look
 
 ### Architecture
 - **Pattern**: MVC (Model-View-Controller)
@@ -74,13 +74,13 @@ lockr/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/lockr.git
+   git clone https://github.com/saliqbashir/lockr.git
    cd lockr
    ```
 
 2. **Install dependencies**
    ```bash
-   pip install flask flask-session cryptography
+   pip install -r requirements.txt
    ```
 
 3. **Initialize the database**
@@ -117,7 +117,6 @@ lockr/
 
 ## 🎨 UI/UX Highlights
 
-- **Dark Theme**: Professional hacker-style aesthetic
 - **Responsive Layout**: Optimized for desktop and mobile devices
 - **Real-time Search**: Instant filtering without page reloads
 - **Password Visibility**: Toggle between hidden and visible passwords
