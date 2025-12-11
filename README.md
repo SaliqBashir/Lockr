@@ -83,9 +83,9 @@ lockr/
    pip install -r requirements.txt
    ```
 
-3. **Initialize the database**
+3. **Run flask**
    ```bash
-   python app.py
+   flask run
    ```
 
 4. **Access the application**
