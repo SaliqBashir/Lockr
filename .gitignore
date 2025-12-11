@@ -1,5 +1,4 @@
-bin/
 __pycache__/
-lib*/
-lib/
-pyvenv*
+venv/
+*.pyc
+.env
