@@ -77,18 +77,23 @@ lockr/
    git clone https://github.com/saliqbashir/lockr.git
    cd lockr
    ```
-
-2. **Install dependencies**
+   
+2. **Activate Python Virtual Environment**
+   ```bash
+   python -m venv .
+   ```
+   
+3. **Install dependencies**
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Run flask**
+4. **Run flask**
    ```bash
    flask run
    ```
 
-4. **Access the application**
+5. **Access the application**
    - Navigate to `http://localhost:5000`
    - Register a new account or login with existing credentials
 
