@@ -1,7 +1,5 @@
 cs50
-werkzeug.security
 flask
-flask_session
-secrets
-cryptography.fernet
-functools
+Flask-Session
+werkzeug
+cryptography
